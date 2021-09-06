@@ -1,0 +1,10 @@
+@import'/bootstrap/style.ttss';
+
+.intro {
+  margin: 36px;
+  text-align: center;
+}
+
+.padding-10 {
+  padding: 10px;
+}

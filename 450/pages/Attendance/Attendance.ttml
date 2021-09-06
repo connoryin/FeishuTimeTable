@@ -1,0 +1,90 @@
+<view class="content">
+  <view class="head">
+    <text class="score">Attendance：{{signScore}}/{{totalNum}} </text>
+  </view>
+
+  <view class="top">
+    <view class="button {{signed?'active':''}}" bindtap="onSign">
+      <label tt:if="{{signed}}" for="button">
+        已签到
+      </label>
+      <label tt:else for="button">
+        未签到
+      </label>
+    </view>
+  </view>
+  <view class="week">
+    <view class="dots">
+      <view class="line"></view>
+      <label class="dot {{item.signed?'active':''}}" for="line" tt:for="{{classes1}}" tt:key="item"></label>
+    </view>
+    <view class="days">
+      <view class="day" tt:for="{{classes1}}" tt:key="{{item}}">
+          <label for="day">{{item.classL}}</label>
+      </view>    
+    </view>    
+  </view>
+
+  <view class="week">
+    <view class="dots">
+      <view class="line"></view>
+      <label class="dot {{item.signed?'active':''}}" for="line" tt:for="{{classes2}}" tt:key="item"></label>
+    </view>
+    <view class="days">
+      <view class="day" tt:for="{{classes2}}" tt:key="{{item}}">
+          <label for="day">{{item.classL}}</label>
+      </view>  
+    </view>    
+  </view>
+
+  <view class="week">
+    <view class="dots">
+      <view class="line"></view>
+      <label class="dot {{item.signed?'active':''}}" for="line" tt:for="{{classes3}}" tt:key="item"></label>
+    </view>
+    <view class="days">
+      <view class="day" tt:for="{{classes3}}" tt:key="{{item}}">
+          <label for="day">{{item.classL}}</label>
+      </view>    
+    </view>    
+  </view>
+
+  <view class="week">
+    <view class="dots">
+      <view class="line"></view>
+      <label class="dot {{item.signed?'active':''}}" for="line" tt:for="{{classes4}}" tt:key="item"></label>
+    </view>
+    <view class="days">
+      <view class="day" tt:for="{{classes4}}" tt:key="{{item}}">
+          <label for="day">{{item.classL}}</label>
+      </view>    
+    </view>    
+  </view>
+
+  <view class="week">
+    <view class="dots">
+      <view class="line"></view>
+      <label class="dot {{item.signed?'active':''}}" for="line" tt:for="{{classes5}}" tt:key="item"></label>
+    </view>
+    <view class="days">
+      <view class="day" tt:for="{{classes5}}" tt:key="{{item}}">
+          <label for="day">{{item.classL}}</label>
+      </view>    
+    </view>    
+  </view>
+
+  <view class="week">
+    <view class="dots">
+      <view class="line"></view>
+      <label class="dot {{item.signed?'active':''}}" for="line" tt:for="{{classes6}}" tt:key="item"></label>
+    </view>
+    <view class="days">
+      <view class="day" tt:for="{{classes6}}" tt:key="{{item}}">
+          <label for="day">{{item.classL}}</label>
+      </view>    
+    </view>    
+  </view>
+</view>
+
+
+  

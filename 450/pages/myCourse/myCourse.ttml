@@ -1,0 +1,62 @@
+<view class="intro">
+    <view>
+        <image class="icon_image" style="width:140px; height: 35px;"
+            src="course.jpg" mode="aspectFill" />
+    </view>
+    <view>
+        <text>\n</text>
+    </view>
+
+    <view class="padding-10"></view>
+
+    <view class="box">
+        <block tt:for="{{myCourse}}">
+            <view>
+                <button class="item{{index%4}}" bindtap="viewCourse" id="{{index}}">{{item[0]}}</button>
+            </view>
+        </block>
+    </view>
+
+    <view>
+        <text>\n</text>
+    </view>
+
+
+    <view>
+        <image class="icon_image" style="width:100px; height: 35px;"
+            src="assignment.jpg" mode="aspectFill" />
+    </view>
+    <view>
+        <text>\n</text>
+    </view>
+    <view class="padding-10"></view>
+
+    <view tt:for="{{todo}}" class="list">
+        <view class="link" bindtap="onItemClick" id={{item[3]}}>{{item[1]}}</view>
+        <view>{{item[0]}}</view>
+        <view>ddl: {{item[2]}}</view>
+    </view>
+
+    <view>
+        <text>\n</text>
+    </view>
+    
+    <view>
+        <text>\n</text>
+    </view>
+    <view>
+        <image class="icon_image" style="width:190px; height: 35px;"
+            src="feedback.jpg" mode="aspectFill" />
+    </view>
+    <view>
+        <text>\n</text>
+    </view>
+    <view class="padding-10"></view>
+
+    <view tt:for="{{feedback}}" class="list">
+        <view class="link" bindtap="onItemClick" id={{item[4]}}>{{item[1]}}</view>
+        <view>{{item[0]}}</view>
+        <view>{{item[3]}}/{{item[2]}}</view>
+    </view>
+
+</view>

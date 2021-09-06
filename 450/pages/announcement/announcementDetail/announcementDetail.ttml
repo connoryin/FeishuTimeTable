@@ -1,0 +1,8 @@
+<view class="intro">
+    <view>
+        <view class="title">{{title}}</view>
+        <view class="left">{{content}}</view>
+        <view class="right">By {{author}}</view>
+        <view class="right">{{time}}</view>
+    </view>
+</view>

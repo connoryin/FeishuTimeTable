@@ -1,0 +1,130 @@
+<view class="intro">
+    <view class="row">
+    <view class = "text-white"> Search: </view>
+    <button type="default" size="mini" formType="submit" style="position: absolute; right: 30px;" bindtap="selected">View Selected Courses</button>
+    </view>
+    <view class="padding-20"></view>
+    <form catchsubmit="search">
+
+        <picker value="{{termIndex}}" range="{{termArray}}"
+            bindchange="bindTermChange" bindcancel="bindCancel">
+            <view class="shadow-sm bg-lightgray">
+                Term：{{termArray[termIndex]}}
+            </view>
+        </picker>
+
+        <view class="padding-5"></view>
+
+        <input class="shadow-sm bg-lightgray" name="name" bindinput="nameinput" font-family="Monaco" placeholder="Course ID"/>
+
+        <view class="padding-5"></view>
+
+        <input class="shadow-sm bg-lightgray" name="prof" bindinput="profinput" font-family="Monaco" placeholder="Professor Name"/>
+
+        <view class="padding-5"></view>
+
+        <picker value="{{majorIndex}}"  font-family="Monaco" range="{{majorArray}}"
+            bindchange="bindMajorChange" bindcancel="bindCancel">
+            <view class="shadow-sm bg-lightgray">
+                Major：{{majorArray[majorIndex]}}
+            </view>
+        </picker>
+
+        <view class="padding-5"></view>
+
+        <picker value="{{levelIndex}}"  font-family="Monaco" range="{{levelArray}}"
+            bindchange="bindLevelChange" bindcancel="bindCancel">
+            <view class="shadow-sm bg-lightgray">
+                Level：{{levelArray[levelIndex]}}
+            </view>
+        </picker>
+
+        <view class="padding-5"></view>
+
+        <picker value="{{categoryIndex}}"  font-family="Monaco" range="{{categoryArray}}"
+            bindchange="bindCategoryChange" bindcancel="bindCancel">
+            <view class="shadow-sm bg-lightgray">
+                Category：{{categoryArray[categoryIndex]}}
+            </view>
+        </picker>
+
+        <view class="padding-5"></view>
+
+        <picker value="{{creditIndex}}"  font-family="Monaco" range="{{creditArray}}"
+            bindchange="bindCreditChange" bindcancel="bindCancel">
+            <view class="shadow-sm bg-lightgray">
+                Credit：{{creditArray[creditIndex]}}
+            </view>
+        </picker>
+
+    </form>
+        
+    <view class="padding-10"></view>
+    <view class="padding-10"></view>
+
+    
+
+
+    <view tt:if="{{message == 'loading'}}">  <image style="width:300px; height:130px"
+            src="loading.png" mode="aspectFill" /> </view>
+    <view tt:elif="{{courses.length > 0}}">
+
+        <view tt:if="{{message == 'Please input expected standards above to see matching courses!'}}">
+            <view class="view_fengexian">
+                <view ></view>
+                    <text class="text_fengexian">Popular Courses</text>
+                <view ></view>
+            </view>
+        </view>
+        <view tt:else>
+            <view class="view_fengexian">
+                <view ></view>
+                    <text class="text_fengexian">Search Results</text>
+                <view ></view>
+            </view>
+        </view>
+
+        <view tt:for="{{courses}}">
+            <view class="card-sel" data-courseID={{item[0]}} bindtap="showCourse" id="{{index}}"> 
+                <image class="card-img-sel" style="width:310px; height: 200px;" src="icon_1.png" />
+                    <view class="card-img-overlay">
+                        <view class="text-left white">{{item[1]}}</view>
+                        <view class="padding-23"></view>
+                        <view class="f-9x text-left item1">Time：{{item[2]}}</view>
+                        <view class="f-9x text-left item1">Professor：{{item[3]}}</view>
+                        <view class="f-9x text-left item1">Classroom：{{item[4]}}</view>
+                        <view class="f-9x text-left item1">Capacity：{{item[5]}}</view>
+                        <view class="f-9x text-left item1">Credit：{{item[6]}}</view>
+                    </view>
+            </view>
+            <view class="padding-10"></view>
+        </view>
+    </view>
+    <view tt:elif="{{message == ''}}"> <image style="width:300px; height:130px"
+            src="no_found.png" mode="aspectFill" />  </view>
+    <view tt:else>
+        <view class="view_fengexian">
+            <view ></view>
+                <text class="text_fengexian">Popular Courses</text>
+            <view ></view>
+        </view>
+
+        <view tt:for="{{courses}}">
+            <view class="card-sel" data-courseID={{item[0]}} bindtap="showCourse" id="{{index}}"> 
+                <image class="card-img-sel" style="width:310px; height: 200px;" src="icon_1.png" />
+                    <view class="card-img-overlay">
+                        <view class="text-left white">{{item[1]}}</view>
+                        <view class="padding-23"></view>
+                        <view class="f-9x text-left item1">Time：{{item[2]}}</view>
+                        <view class="f-9x text-left item1">Professor：{{item[3]}}</view>
+                        <view class="f-9x text-left item1">Classroom：{{item[4]}}</view>
+                        <view class="f-9x text-left item1">Capacity：{{item[5]}}</view>
+                        <view class="f-9x text-left item1">Credit：{{item[6]}}</view>
+                    </view>
+            </view>
+            <view class="padding-10"></view>
+        </view> 
+    </view>
+
+
+</view>

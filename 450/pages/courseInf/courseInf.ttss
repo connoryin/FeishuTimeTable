@@ -1,0 +1,78 @@
+.intro {
+  margin: 20px;
+  text-align: left;
+  font-size: 15px;
+}
+.courseTitle {
+  font-weight:bold;
+  font-size: 20px;
+}
+.sylink {
+  text-align: left;
+  color:blue;
+  text-decoration: underline; 
+}
+.link {
+  color:blue;
+  text-decoration: underline; 
+}
+.prof-image {
+  width:40%;
+  margin-left:0%;
+  text-align: left;
+  float: left;
+}
+.prof-info {
+  width:60%;
+  margin-right:5%;
+  text-align:left;
+  float: right;
+}
+.sel-btn {
+  background-color:crimson;
+  margin-right:5%;
+  text-align:right;
+  float: right;
+}
+.grey-btn {
+  background-color:darkolivegreen;
+  margin-right:5%;
+  text-align:right;
+  float: right;
+}
+.nav-btn {
+  background-color:darkorange;
+  margin-right:5%;
+  margin-top:5%;
+  text-align:center;
+  color: white;
+  float: right;
+  width:150px;
+  height: 23px;
+  border-radius: 10px;
+}
+
+.item{
+ height:4%;
+ background: #fff;
+ text-align: center;
+}
+.no{
+ text-align: center;
+ position: absolute;
+ top:8%;
+ z-index: -11;
+}
+.isShow{
+ display:none;
+}
+.dis{
+  text-align:left;
+  color: red;
+}
+.dis_time{
+ width:100%;
+}
+.data {
+  color:blue;
+}

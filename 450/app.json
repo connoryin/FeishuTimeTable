@@ -1,0 +1,47 @@
+{
+  "pages":[
+    "pages/courseSel/courseSel",
+    "pages/register/register",
+    "pages/courseInf/courseInf",
+    "pages/searchResult/searchResult",
+    "pages/announcement/announcementList/announcementList",
+    "pages/announcement/announcementDetail/announcementDetail",
+    "pages/announcement/create/create",
+    "pages/myCourse/myCourse",
+    "pages/menu/menu",
+    "pages/selectedCourse/selectedCourse",
+    "pages/assignment/assignmentList/assignmentList",
+    "pages/assignment/assignmentDetail/assignmentDetail",
+    "pages/assignment/create/create",
+    "pages/assignment/grade/grade",
+    "pages/courseDetail/courseDetail",
+    "pages/Attendance/Attendance"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "rgb(9, 3, 142)",
+    "navigationBarTitleText": "Feishu Timetable",
+    "navigationBarTextStyle":"white"
+  },
+  "tabBar": {
+    "color": "#999",
+    "selectedColor": "black",
+    "backgroundColor": "white",
+    "position": "bottom",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/myCourse/myCourse",
+        "text": "My Course",
+        "iconPath": "icons/Course.png",
+        "selectedIconPath": "icons/Course.png"
+      },
+      {
+        "pagePath": "pages/courseSel/courseSel",
+        "text": "Course Selection",
+        "iconPath": "icons/selection.png",
+        "selectedIconPath": "icons/selection.png"
+      }
+    ]
+  }
+}

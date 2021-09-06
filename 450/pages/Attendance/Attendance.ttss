@@ -1,0 +1,91 @@
+page{
+    height:100%;
+    width:100%
+}
+
+.content{
+    height:100%;
+    width:100%;
+    background-color: #eeeeee;
+}
+
+.head{
+    margin: 20rpx;
+    display:flex;
+    flex-direction: column;
+}
+
+.note{
+    color:#8b8b8b;
+}
+
+.score{
+    color:red;
+}
+
+.top{
+    height:200rpx;
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.button{
+    height: 160rpx;
+    width: 160rpx;
+    background-color: #8b8b8b;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:white;
+    font-weight: 600;    
+}
+
+.week{
+    margin: 40rpx 80rpx;
+    display: flex;
+    flex-direction: column;
+}
+
+.hint{
+    margin:100rpx;
+    color:white;
+    font-size:x-small;
+    display: flex;
+}
+
+.dots{
+    margin:15rpx 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.line{
+    border: 1rpx solid #cdcdcd;
+    width:80%;
+    position:absolute;
+}
+
+.dot{
+    height: 20rpx;
+    width: 20rpx;
+    border-radius: 50%;
+    background-color: #cdcdcd;
+    z-index:10
+}
+
+.days{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: #8b8b8b;
+    font-size: small;
+}
+
+.active{
+    background-color: #ff4c4c;
+}

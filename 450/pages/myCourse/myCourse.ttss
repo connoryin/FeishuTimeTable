@@ -1,0 +1,110 @@
+@import'/bootstrap/style.ttss';
+
+.intro {
+    margin: 10px;
+    text-align: left;
+    font-size: 15px;
+}
+.title {
+    font-weight:bold;
+    font-size: 20px;
+}
+.box{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content:flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: center;
+    margin-top: 30rpx;
+    line-height: normal;
+}
+.box .item0{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    width: 320rpx;
+    height: 250rpx;
+    border-radius: 25rpx;
+    background-color: #5ac5c6;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15rpx;
+}
+.box .item1{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    width: 320rpx;
+    height: 250rpx;
+    border-radius: 25rpx;
+    background-color: #5ac5c6;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15rpx;
+}
+
+.box .item2{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    width: 320rpx;
+    height: 230rpx;
+    border-radius: 25rpx;
+    background-color: #5ac5c6;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15rpx;
+}
+
+.box .item3{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    width: 320rpx;
+    height: 230rpx;
+    border-radius: 25rpx;
+    background-color: #5ac5c6;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15rpx;
+}
+
+.link {
+    text-align: left;
+    color:blue;
+    text-decoration: underline; 
+}
+.subtitle {
+    font-weight: bold;
+    font-size: 15px;
+}
+.nav-btn {
+    background-color:darkorange;
+    margin-right:5%;
+    margin-top:5%;
+    text-align:center;
+    color: white;
+    float: right;
+    width:80px;
+    height: 23px;
+    border-radius: 10px;
+}
+
+.padding-10 {
+    padding: 10px
+}
+
+.list {
+    border-bottom: 1px solid;
+    padding-bottom: 5px
+}
+
+.icon_image {
+  width:40%;
+  margin-left:0%;
+  text-align: left;
+  float: left;
+}

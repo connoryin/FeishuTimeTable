@@ -1,0 +1,28 @@
+<view class="intro">
+    <view> <image style="width:250px; height:60px; position: absolute; top: 5px; left:17px" src="title.png" mode="aspectFill" /> </view>
+    <view class="padding-10"></view>
+    <view class="padding-10"></view>
+    <view class="padding-10"></view>
+    <view class="padding-10"></view>
+    <view class="padding-10"></view>
+
+    
+    <view tt:for="{{courses}}">
+        <view class="card-sel" data-courseID={{item[0]}} bindtap="showCourse" id="{{index}}"> 
+            <image class="card-img-sel" style="width:310px; height: 200px;" src="icon_1.png" />
+                <view class="card-img-overlay">
+                    <view class="f-11x text-left white">{{item[1]}}</view>
+                    <view class="padding-23"></view>
+                    <view class="f-9x text-left item1">Time：{{item[2]}}</view>
+                    <view class="f-9x text-left item1">Professor：{{item[3]}}</view>
+                    <view class="f-9x text-left item1">Classroom：{{item[4]}}</view>
+                    <view class="f-9x text-left item1">Capacity：{{item[5]}}</view>
+                    <view class="f-9x text-left item1">Credit：{{item[6]}}</view>
+                </view>
+        </view>
+        <view class="padding-10"></view>
+    </view>
+
+    
+
+</view>

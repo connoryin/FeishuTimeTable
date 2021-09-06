@@ -1,0 +1,146 @@
+@import'/bootstrap/style.ttss';
+
+.intro {
+  margin: 30px;
+}
+
+.bg-lightgray {
+  background-color: lightgray;
+}
+
+.flex-wrp {
+  display:flex;
+}
+
+.flex-item {
+  width: 300rpx;
+  font-size: 26rpx;
+  margin: 10rpx;
+}
+
+.padding-5 {
+  padding: 5rpx;
+}
+
+
+.padding-10 {
+  padding: 10rpx;
+}
+
+.padding-23 {
+  padding: 23rpx;
+}
+
+.padding-20 {
+  padding: 20rpx;
+}
+
+.bottom {
+  position: absolute;
+  bottom: 10rpx;
+}
+
+.nav-btn {
+  background-color:darkblue;
+  margin-top:5%;
+  text-align:center;
+  color: white;
+  float: left;
+  width: 145px;
+  height: 23px;
+  border-radius: 10px;
+}
+
+input {
+  border-color: lightgray;
+}
+
+.right {
+  float: right;
+}
+
+.white{
+    color: white;
+}
+
+.item0{
+    color: #FA8983;
+}
+
+.item1{
+    color: #5ac5c6;
+}
+.item2{
+    color: #FF8AC3;
+}
+
+.card::after{
+  border:0;
+  border:none;
+}
+
+.view_fengexian {
+  width: 96%;
+  height: 50rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: 0rpx 2% 0rpx 2%;
+}
+
+/* 两个view的样式 */
+.view_fengexian view {
+  width: 33%;
+  height: 2rpx;
+  background: linear-gradient(to right, #ead6ee, #a0f1ea);
+}
+
+/* 字体的样式 */
+.text_fengexian {
+  font-size: 25rpx;
+  color: gray;
+  margin: 0rpx 2% 0rpx 2%;
+}
+
+.card-sel {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 0px;
+    border: none;
+  }
+  
+  .card-sel > hr {
+    margin-right: 0;
+    margin-left: 0;
+  }
+  
+  .card-sel > .list-group:first-child .list-group-item:first-child {
+    border-top-left-radius: 0.25rem;
+    border-top-right-radius: 0.25rem;
+  }
+  
+  .card-sel > .list-group:last-child .list-group-item:last-child {
+    border-bottom-right-radius: 0.25rem;
+    border-bottom-left-radius: 0.25rem;
+  }
+  
+.card-img-sel {
+  width: 100%;
+  border: none;
+  border: 0px;
+}
+
+
+
+

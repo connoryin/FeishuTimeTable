@@ -1,0 +1,16 @@
+<view class="intro">
+    {{name}}
+    <view class="padding-10"></view>
+    <button bindtap="announcement">
+        Announcement
+    </button>
+
+    <button bindtap="assignment">
+        Assignment
+    </button>
+
+    <button bindtap="attendance">
+        Attendance Checking
+    </button>
+</view>
+

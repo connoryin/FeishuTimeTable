@@ -1,0 +1,17 @@
+<view class="intro">
+    <view class="header">Search Result</view>
+    <view class="padding-10"></view>
+
+    <view tt:for="{{courses}}">
+        <view class="card card-body text-left" data-courseID={{item[0]}} bindtap="showCourse" id="{{index}}">
+            <view>{{index+1}}: {{item[1]}}</view>
+            <view>Time：{{item[2]}}</view>
+            <view>Professor：{{item[3]}}</view>
+            <view>Classroom：{{item[4]}}</view>
+            <view>Capacity：{{item[5]}}</view>
+            <view>Credit：{{item[6]}}</view>
+        </view>
+        <view class="padding-10"></view>
+    </view>
+
+</view>

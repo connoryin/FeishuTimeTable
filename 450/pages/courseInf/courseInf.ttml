@@ -1,0 +1,129 @@
+<view class="intro">
+    <view>
+        <text class="courseTitle">{{courseName}}</text>
+    </view>
+    <view>
+        <text>\n</text>
+    </view>
+    
+
+
+    <block tt:if="{{true}}" tt:for="{{listData}}" tt:key="idx" tt:for-item="item" tt:for-index="{{idx}}">
+        <view class = "dis">
+            Remaining Time：{{item.countDown}}
+        </view>
+    </block>
+
+    <block tt:if="{{currentTime > endSelTime}}">    
+        <button class="grey-btn" formType="submit" type="primary" size="mini">Selection Finished</button>      
+    </block>
+    <block tt:elif="{{currentTime < startSelTime}}">    
+        <button class="grey-btn" formType="submit" type="primary" size="mini">Selection Starts soon</button>       
+    </block>
+    <block tt:elif="{{currentNum < capacity && selected == false}}">
+        <form catchsubmit="addCourse">
+            <button class="sel-btn" formType="submit" type="primary" size="mini">Add Course</button>
+        </form>        
+    </block>
+    <block tt:elif="{{currentNum < capacity && selected == true}}">
+        <form catchsubmit="dropCourse">
+            <button class="sel-btn" formType="submit" type="primary" size="mini">Drop Course</button>
+        </form>        
+    </block>
+    <block tt:else>    
+        <button class="grey-btn" formType="submit" type="primary" size="mini">Enrollment Full</button>         
+    </block>
+
+
+    <view float=right>
+        <text text-align=right>Student Enrolled: {{currentNum}}/{{capacity}}</text>
+    </view>
+
+
+
+    <view>
+        <text>Section: {{section}}</text>
+    </view>
+    <view>
+        <text>Credit: {{credit}}</text>
+    </view>
+    <view>
+        <text>Prerequisite: {{prerequisite}}</text>
+    </view>
+    <view>
+        <text>Time: {{time}}</text>
+    </view>
+    <view>
+        <text>Location: {{location}}</text>
+    </view>
+    <view>
+        <text>\n</text>
+    </view>
+    <view>
+        <text>Introduction: </text>
+    </view>
+    <view>
+        <text>{{courseIntro}}</text>
+    </view>
+    <view>
+        <text>\n</text>
+    </view>
+    <view class="sylink" bindtap="onItemClicksyllabus">click here to view syllabus</view>
+    <view>
+        <text>\n</text>
+    </view>
+    <view>
+        <text>Professor:</text>
+    </view>
+    <view>
+        <image class="prof-image" style="width:100px; height: 100px;"
+            src={{profile}} mode="aspectFill" />
+    </view>
+    <view class="prof-info">
+        <text>Name: {{professor}}\n</text>
+        <text>Email: {{email}}\n</text>
+        <text>Office: {{office}}\n</text>
+        <view class="link" bindtap="onItemClickprofile">click here to view professor's website</view>
+    </view>
+    <view>
+        <text>\n\n\n</text>
+    </view>
+
+    <view>
+        <text>\n</text>
+    </view>
+
+    <view>
+        <text>\n</text>
+    </view>
+
+    <view>
+        <text>\n</text>
+    </view>
+
+    <view>
+        <image class="prof-image" style="width:320px; height: 240px;"
+            src="grade_{{courseID%3}}.png" mode="aspectFill" />
+    </view>
+
+
+    <view>
+        <text>\n</text>
+    </view>
+    <view>
+        <text>\n</text>
+    </view>
+    <view>
+        <text>Median Grade: </text> <text class="data">{{median[courseID%3]}}</text>
+    </view>
+    <view>
+        <text>Most incoming student level: </text> <text class="data">Freshman</text>
+    </view>
+    <view>
+        <text>Workload: </text> <text class="data">Heavy</text>
+    </view>
+    <view>
+        <text>How likely you recommend this course: </text> <text class="data">{{rate[courseID%3]}}</text>
+    </view>
+
+</view>

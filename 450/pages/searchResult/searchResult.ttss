@@ -1,0 +1,32 @@
+@import'/bootstrap/style.ttss';
+
+.intro {
+  margin: 30px;
+  text-align: center;
+  font-size: 15px;
+}
+
+.padding-10 {
+  padding: 10rpx;
+}
+
+.course {
+  text-align: left;
+  background-color: lightgrey;
+  width: 100%;
+}
+
+.nav-btn {
+  background-color:darkblue;
+  margin-top:5%;
+  text-align:center;
+  color: white;
+  float: left;
+  width: 145px;
+  height: 23px;
+  border-radius: 10px;
+}
+
+.header {
+  font-size: 26px;
+}

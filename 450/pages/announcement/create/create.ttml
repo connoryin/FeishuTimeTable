@@ -1,0 +1,18 @@
+<view class="intro">
+    <view class="padding-10"></view>
+    <form catchsubmit="submit" catchreset="cancel">
+        <input class="shadow-sm" name="title" placeholder="Title" />
+        <view class="padding-10"></view>
+        <textarea
+            bindinput="onTextInput"
+            placeholder="Content"
+            class="shadow-sm"
+        />
+        <view class="padding-10"></view>
+        <view class="btn-area">
+            <button type="primary" formType="submit" size="mini" style="margin-right: 10px;">Submit</button>
+            <button formType="reset" size="mini" bindtap="cancel">Cancel</button>
+        </view>
+    </form>
+</view>
+

@@ -1,0 +1,16 @@
+<view class="intro">
+    <view class="header">Announcement</view>
+    <view class="padding-10"></view>
+    <button type="primary" size="mini" disabled="{{isStudent}}" class="offset-8" bindtap="createAnnouncement">Create</button>
+    <view class="padding-10"></view>
+
+    <view tt:for="{{announcement}}">
+        <view class="card card-body" bindtap="viewAnnouncement" id="{{index}}">
+            <view class="title card-title" id="{{index}}">{{item[0]}}</view>
+            <view class="right" id="{{index}}">By {{item[2]}}</view>
+            <view class="right" id="{{index}}">{{item[3]}}</view>
+        </view>
+        <view bindtap="viewAnnouncement" class="padding-10"></view>
+    </view>
+
+</view>

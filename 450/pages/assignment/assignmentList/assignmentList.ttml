@@ -1,0 +1,17 @@
+<view class="intro">
+    <view class="header">Assignment</view>
+    <view class="padding-10"></view>
+
+    <button type="primary" size="mini" disabled="{{isStudent}}" class="offset-8" bindtap="createAssignment">Create</button>
+    
+    <view class="padding-10"></view>
+    <view tt:for="{{assignment}}">
+        <view class="card card-body" id="{{index}}" bindtap="ontap">
+            <view class="title card-title" id="{{index}}">{{item[4]}}</view>
+            <view class="right" id="{{index}}">due: {{item[1]}}</view>
+            <view class="right" id="{{index}}">score: {{item[2]}}/{{item[3]}}</view>
+        </view>
+        <view class="padding-10" bindtap="ontap" id="{{index}}"></view>
+    </view>
+
+</view>

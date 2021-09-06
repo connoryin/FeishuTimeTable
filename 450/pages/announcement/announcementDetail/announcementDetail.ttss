@@ -1,0 +1,24 @@
+@import'/bootstrap/style.ttss';
+
+.intro {
+  margin: 30px;
+  text-align: center;
+  font-size: 15px;
+}
+
+.title {
+    font-size: 20px;
+  }
+  
+  .header {
+    font-size: 26px;
+  }
+  
+  .left {
+    text-align: left;
+  }
+  
+  .right {
+    text-align: right;
+  }
+  

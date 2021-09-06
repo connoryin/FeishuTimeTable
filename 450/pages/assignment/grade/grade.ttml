@@ -1,0 +1,22 @@
+<view class="intro">
+    <view class="header">Grades</view>
+    <view class="padding-10"></view>
+
+    <form catchsubmit="submit" catchreset="cancel">
+        <view class="tr bg-w">
+             <view class="th">Student ID</view>
+             <view class="th">Assignment</view>
+             <view class="th">Score</view>
+        </view>
+        <view tt:for="{{submission}}">
+             <view class="tr">
+                 <view class="td">{{item[0]}}</view>
+                 <view class="td blue" bindtap="viewAssignment" id="{{item[1]}}">Click to view</view>
+                 <input class="shadow-sm" id="{{item[0]}}"
+                    placeholder="{{item[2]}}"
+                    bindconfirm="onconfirm" />
+             </view>
+        </view>
+    </form>
+
+</view>

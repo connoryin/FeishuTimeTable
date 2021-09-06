@@ -1,0 +1,25 @@
+<view class="intro">
+    <view class="text-primary">Please fill in your personal information</view>
+    <form catchsubmit="confirm">
+      <view class="padding-10"></view>
+
+      <input class="shadow-sm" name="ID" placeholder="ID"/>
+      
+      <view class="padding-10"></view>
+      
+      <input class="shadow-sm" name="name" placeholder="Name"/>
+      
+      <view class="padding-10"></view>
+
+      <radio-group bindchange="radioChange">
+        <radio value="0" checked/>Student
+        <radio value="1"/>Professor
+      </radio-group>
+      
+      <view class="padding-10"></view>
+
+      <view class="btn-area">
+        <button class="btn-sm" formType="submit">Submit</button>
+      </view>
+    </form>
+</view>

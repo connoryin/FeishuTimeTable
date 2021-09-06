@@ -1,0 +1,35 @@
+<view class="intro">
+    <view class="header">Create new assignment</view>
+    <view class="padding-10"></view>
+
+    <form catchsubmit="submit" catchreset="cancel">
+        <input class="shadow-sm" name="title" placeholder="Title" />
+        <view class="padding-10"></view>
+        <input class="shadow-sm" name="url" placeholder="Docs URL"></input>
+        <view class="padding-10"></view>
+        <input class="shadow-sm" type="number" name="fullscore" placeholder="Full score"></input>
+        <view class="padding-10"></view>
+
+        <picker mode="time" value="{{time}}" start="{{timeStart}}" end="{{timeEnd}}"
+            bindchange="bindTimeChange">
+            <view class="picker">
+                due time: {{time}}
+            </view>
+        </picker>
+
+        <picker mode="date" value="{{date}}" start="2020-09-01" end="2025-09-01"
+            bindchange="bindDateChange" fields="day">
+            <view class="picker">
+                due date: {{date}}
+            </view>
+        </picker>
+
+        <view class="padding-10"></view>
+
+        <view class="btn-area">
+            <button type="primary" formType="submit" size="mini" style="margin-right: 10px;">Submit</button>
+            <button formType="reset" size="mini">Cancel</button>
+        </view>
+    </form>
+
+</view>

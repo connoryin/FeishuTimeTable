@@ -1,0 +1,51 @@
+
+<view class="intro">
+    <view class="row">
+    <view> <text style="color:white">Search: </text> </view>
+    <button type="default" size="mini" formType="submit" style="position: absolute; right: 0;" bindtap="selected">View Selected Courses</button>
+    </view>
+    <form catchsubmit="search">
+
+        <picker value="{{termIndex}}" range="{{termArray}}"
+            bindchange="bindTermChange" bindcancel="bindCancel">
+            <view class="shadow-sm">
+                Term：{{termArray[termIndex]}}
+            </view>
+        </picker>
+
+
+        <picker value="{{majorIndex}}" range="{{majorArray}}"
+            bindchange="bindMajorChange" bindcancel="bindCancel">
+            <view class="shadow-sm">
+                Major：{{majorArray[majorIndex]}}
+            </view>
+        </picker>
+
+        <picker value="{{levelIndex}}" range="{{levelArray}}"
+            bindchange="bindLevelChange" bindcancel="bindCancel">
+            <view class="shadow-sm">
+                Level：{{levelArray[levelIndex]}}
+            </view>
+        </picker>
+
+        <picker value="{{categoryIndex}}" range="{{categoryArray}}"
+            bindchange="bindCategoryChange" bindcancel="bindCancel">
+            <view class="shadow-sm">
+                Category：{{categoryArray[categoryIndex]}}
+            </view>
+        </picker>
+
+        <picker value="{{creditIndex}}" range="{{creditArray}}"
+            bindchange="bindCreditChange" bindcancel="bindCancel">
+            <view class="shadow-sm">
+                Credit：{{creditArray[creditIndex]}}
+            </view>
+        </picker>
+
+        <input class="shadow-sm" name="name" placeholder="Course ID"/>
+
+        <input class="shadow-sm" name="prof" placeholder="Professor Name"/>
+
+    </form>
+
+</view>

@@ -1,0 +1,93 @@
+@import'/bootstrap/style.ttss';
+
+.intro {
+  margin: 30px;
+  text-align: center;
+  font-size: 15px;
+}
+
+.padding-10 {
+  padding: 10rpx;
+}
+
+.padding-23 {
+  padding: 23rpx;
+}
+
+.course {
+  text-align: left;
+  background-color: lightgrey;
+  width: 100%;
+}
+
+.nav-btn {
+  background-color:darkblue;
+  margin-top:5%;
+  text-align:center;
+  color: white;
+  float: left;
+  width: 145px;
+  height: 23px;
+  border-radius: 10px;
+}
+
+.left {
+  text-align: left
+}
+
+.header {
+  font-size: 26px;
+}
+
+.white{
+    color: white;
+}
+
+.item0{
+    color: #FA8983;
+}
+
+.item1{
+    color: #5ac5c6;
+}
+.item2{
+    color: #FF8AC3;
+}
+
+.card-sel {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 0px;
+    border: none;
+  }
+  
+  .card-sel > hr {
+    margin-right: 0;
+    margin-left: 0;
+  }
+  
+  .card-sel > .list-group:first-child .list-group-item:first-child {
+    border-top-left-radius: 0.25rem;
+    border-top-right-radius: 0.25rem;
+  }
+  
+  .card-sel > .list-group:last-child .list-group-item:last-child {
+    border-bottom-right-radius: 0.25rem;
+    border-bottom-left-radius: 0.25rem;
+  }
+  
+.card-img-sel {
+  width: 100%;
+  border: none;
+  border: 0px;
+}

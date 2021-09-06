@@ -1,0 +1,27 @@
+<view class="intro">
+    <view class="header">{{title}}</view>
+    
+    <view class="padding-10"></view>
+
+    <view class="right">due: {{ddl}}</view>
+    <view class="right">score: {{grade}}/{{fullscore}}</view>
+    
+    <view class="padding-10"></view>
+    
+    <view class="left blue" bindtap="viewAssignment">Click to view the assignment.</view>
+
+    <view class="padding-10"></view>
+
+    <form catchsubmit="submitAssignment">
+        <input class="shadow-sm" name="url" placeholder="Please paste the URL of your assignment"></input>
+        <view class="padding-10"></view>
+        <button class="offset-8" size="mini" formType="submit" tt:if="{{submitted}}">
+            resubmit
+        </button>
+        <button class="btn-primary offset-8" size="mini" formType="submit" tt:else>
+            submit
+        </button>    
+    </form>
+
+
+</view>

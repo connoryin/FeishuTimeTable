@@ -1,0 +1,51 @@
+@import'/bootstrap/style.ttss';
+
+.intro {
+  margin: 30px;
+  text-align: center;
+  font-size: 15px;
+}
+
+.nav-btn {
+  background-color:darkblue;
+  margin-top:5%;
+  text-align:center;
+  color: white;
+  float: left;
+  width: 145px;
+  height: 23px;
+  border-radius: 10px;
+}
+
+.padding-10 {
+  padding: 10rpx;
+}
+
+.panel {
+  border-bottom: 1px solid;
+  border-color: lightgray;
+}
+
+.title {
+  font-size: 20px;
+}
+
+.header {
+  font-size: 26px;
+}
+
+.left {
+  text-align: left;
+}
+
+.right {
+  text-align: right;
+}
+
+.float-right {
+  float: right;
+}
+
+.blue {
+  color: blue;
+}

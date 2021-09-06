@@ -1,0 +1,58 @@
+@import'/bootstrap/style.ttss';
+
+.intro {
+  margin: 30px;
+  text-align: center;
+}
+
+.bg-lightgray {
+  background-color: lightgray;
+}
+
+.flex-wrp {
+  display:flex;
+}
+
+.flex-item {
+  width: 300rpx;
+  font-size: 26rpx;
+  margin: 10rpx;
+}
+
+.padding-10 {
+  padding: 10rpx;
+}
+
+.bottom {
+  position: absolute;
+  bottom: 10rpx;
+}
+
+.nav-btn {
+  background-color:darkblue;
+  margin-top:5%;
+  text-align:center;
+  color: white;
+  float: left;
+  width: 145px;
+  height: 23px;
+  border-radius: 10px;
+}
+
+.input {
+  border: 1px solid;
+  border-color: lightgray;
+}
+
+.right {
+  float: right;
+}
+
+.left {
+  float: left;
+}
+
+.joined {
+  display: grid;
+  grid-template-columns: 1fr auto;
+}

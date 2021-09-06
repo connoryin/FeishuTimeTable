@@ -1,0 +1,7 @@
+{
+    "files.associations": {
+        "*.sql": "oracle",
+        "*.ttml": "xml",
+        "*.ttss": "css"
+    }
+}
